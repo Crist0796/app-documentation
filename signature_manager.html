@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Documentación de Onus" />
+        <meta name="author" content="TL300" />
+        <title>TL300 SIGNATURE MANAGER - DOCS</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <h3 class="text-white">DOCUMENTACIÓN</h3>
+            </a>
+
+            <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Clarence Taylor</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile mx-auto mb-2" src="assets/img/tl300logo.png" alt="..." /></span>
+            </a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#login">Inicio de sesión</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#register-transfer">Traslados de material</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#show-transfer">Ver traslados pendientes</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#delete-transfer">Eliminar traslados</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#approve-transfer">Aprobar traslados</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#show-approve-transfer">Ver traslado aprobados</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- home-->
+            <section class="resume-section" id="home">
+                <div class="resume-section-content d-flex flex-column align-items-center">
+                    <img src="assets/img/tl300logo.png" class="img-fluid" alt="">
+                    <h1 class="mb-0 text-primary">
+                        SIGNATURE MANAGER
+                    </h1>
+                    <!-- <div class="subheading mb-5">
+                        3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
+                        <a href="mailto:name@email.com">name@email.com</a>
+                    </div> -->
+                    <h3 class="lead mb-5 mx-2">Manual de usuario</h3>
+
+                </div>
+            </section>
+            <hr class="m-0" />
+
+            <!-- login-->
+            <section class="resume-section" id="login">
+                <div class="resume-section-content">
+                    <h2 class="mb-5 text-primary">Inicio de sesión</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <p class="fs-4 mb-4">
+                                La primera pantalla que verá en la app será del inicio de sesión.
+                                Allí deberá escribir el nombre de usuario y contraseña que se utiliza en Onus.
+                            </p>
+                            <img src="assets/img/signature_manager/01_login.png" class="img-fluid" alt="">
+                            <p class="fs-4 my-4">
+                                Presione <strong> Login </strong> para iniciar sesión.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <hr class="m-0" />
+
+
+            <!-- register-transfer-->
+            <section class="resume-section" id="register-transfer">
+                <div class="resume-section-content">
+                    <h2 class="mb-5 text-primary">Registrar traslados de material</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <p class="fs-4 mb-4">
+                                En ONUS, en el panel de <strong>Gestión de depósitos</strong> - > <strong> Inventario de materiales</strong> 
+                            </p>
+                            <img src="assets/img/signature_manager/01_register_transfer.png" class="img-fluid" alt="">
+                            <p class="fs-4 my-4">
+                                Al presionar "click" se abrirá a la derecha una grilla del inventario de materiales. 
+                                Ahí podrá seleccionar varios materiales del inventario presionando la tecla <strong> Control + click </strong>  sobre el material.
+                            </p>
+                            <img src="assets/img/signature_manager/02_register_transfer.png" class="img-fluid" alt="">
+                            <p class="fs-4 my-4">
+                                Una vez seleccionados los materiales, deberá presionar <strong> Click derecho </strong> y se abrirá un menú.
+                                En este menú deberá presionar en "Cambiar de ubicación".
+
+                                Tenga en cuenta que si alguno de los materiales seleccionados ya se encuentra registrado en un traslado, 
+                                no podrá registrar el nuevo traslado.
+                            </p>
+                            <img src="assets/img/signature_manager/03_register_transfer.png" class="img-fluid" alt="">
+                            <p class="fs-4 my-4">
+                               En el menú verá opciones desplegables para seleccionar el depósito y el espacio.
+                               Una vez seleccionados, se registrará el traslado y se abrirá una alerta:
+                            </p>
+                            <img src="assets/img/signature_manager/04_register_transfer.png" class="img-fluid" alt="">
+
+                            <p class="fs-4 my-4">
+                                Presione en <strong> Aceptar </strong> y ya podrá ver el traslado reflejado en la App de firmas.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <hr class="m-0" />
+
+             <!-- show-transfer-->
+             <section class="resume-section" id="show-transfer">
+                <div class="resume-section-content">
+                    <h2 class="mb-5 text-primary">Ver traslados de material pendientes</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <p class="fs-4 mb-4">
+                                Una vez haya iniciado sesión en la aplicación con las credenciales del usuario de Onus que 
+                                registró el traslado.
+                                Verá en la pantalla de inicio una alerta que le indicará si tiene traslados pendientes por aprobar.
+                                De igual manera podrá presionar en el botón del centro para dirigirse a la pantalla de traslados pendientes.
+                            </p>
+                            <img src="assets/img/signature_manager/01_show_transfers.png" class="img-fluid" alt="">
+                            <p class="fs-4 my-4">
+                                Al presionar lo dirigirá a la pantalla donde verá un listado de los traslados registrados.
+                            </p>
+                            <img src="assets/img/signature_manager/02_show_transfer.png" class="img-fluid" alt="">
+                            <p class="fs-4 my-4">
+                                En esa pantalla podrá: ver la información de cada traslado, aprobar el traslado o eliminar el traslado.
+
+                                Al presionar el botón para <strong> ver el traslado</strong>
+                                
+                                Abrirá otra pantalla donde verá los detalles del traslado.
+                            </p>
+                            <img src="assets/img/signature_manager/03_show_transfer.png" class="img-fluid" alt="">
+                            <p class="fs-4 my-4">
+                                Presione en <strong> Volver </strong> para volver a la pantalla del listado de traslados pendientes.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <hr class="m-0" />
+
+            <!-- delete-transfer-->
+            <section class="resume-section" id="delete-transfer">
+                <div class="resume-section-content">
+                    <h2 class="mb-5 text-primary">Eliminar traslado</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <p class="fs-4 mb-4">
+                                En la pantalla del listado de traslados al presionar sobre el botón <strong> Eliminar traslado</strong>
+                                se le mostrará una alerta para confirmar si elimina el traslado.
+                            </p>
+                            <img src="assets/img/signature_manager/01_delete_transfer.png" class="img-fluid" alt="">
+                            <p class="fs-4 my-4">
+                                Presione en <strong> ACEPTAR </strong> para eliminar el traslado registrado.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+
+            <!-- approve-transfer-->
+            <section class="resume-section" id="approve-transfer">
+                <div class="resume-section-content">
+                    <h2 class="mb-5 text-primary">Aprobar traslado</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <p class="fs-4 mb-4">
+                                En la pantalla del listado de traslados al presionar sobre el botón <strong> Aprobar traslado</strong>
+                                se le mostrará una alerta para confirmar la aprobación del traslado.
+                            </p>
+                            <img src="assets/img/signature_manager/01_approve_transfer.png" class="img-fluid" alt="">
+                            <p class="fs-4 my-4">
+                                Al presionar en <strong> ACEPTAR </strong> se dirigirá a una pantalla con un formulario
+                                para cargar los datos del responsable del traslado.
+                            </p>
+                            <img src="assets/img/signature_manager/02_approve_transfer.png" class="img-fluid" alt="">
+                            <p class="fs-4 my-4">
+                                Deberá rellenar todos los campos: <strong> Nombre completo </strong> , <strong> Número de documento </strong> , 
+                                <strong> Firma. </strong>
+                                <br> 
+                            </p>
+
+                            <p class="fs-4 my-4">
+                                Para cargar la firma primero deberá dibujarla y luego verificarla con el botón <strong> Verificar Firma</strong> <br>
+                                Tenga en cuenta que si no verifica la firma no podrá aprobar el traslado.
+
+                                Sólo cuando se haya verificado que ha dibujado una firma, podrá continuar.
+                            </p>
+                            <img src="assets/img/signature_manager/04_approve_transfer.png" class="img-fluid" alt="">
+
+                            <p class="fs-4 my-4">
+                                Una vez haya ingresado los datos de manera correcta y haya verificado la firma, 
+                                podrá aprobar el traslado deslizando sobre el botón "Aprobar traslado"
+                            </p>
+                            <img src="assets/img/signature_manager/05_approve_transfer.png" class="img-fluid" alt="">
+                            <p class="fs-4 my-4">
+                                Cuando haya aprobado el traslado se dirigirá automáticamente a la pantalla de traslados 
+                                y recibirá una notificación cuando el traslado se haya hecho.
+                            </p>
+                            <img src="assets/img/signature_manager/06_approve_transfer.png" class="img-fluid" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+
+             <!-- show-approve-transfer-->
+             <section class="resume-section" id="show-approve-transfer">
+                <div class="resume-section-content">
+                    <h2 class="mb-5 text-primary">Ver traslados aprobados</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <p class="fs-4 mb-4">
+                                En ONUS, en el panel de <strong>Gestión de depósitos</strong> - > <strong> traslado de materiales</strong> 
+                            </p>
+                            <img src="assets/img/signature_manager/01_show_approve_transfers.png" class="img-fluid" alt="">
+                            <p class="fs-4 my-4">
+                                Verá una grilla con el listado de traslados filtrados por la fecha, nombre y documento del responsable. <br>
+                                Al hacer <strong> Click derecho </strong> verá un menú donde podrá ver el documento con la
+                                información detalla del traslado:
+                            </p>
+                            <img src="assets/img/signature_manager/02_show_approve_transfer.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+
+
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
