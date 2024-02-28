@@ -36,7 +36,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#show-transfer">Ver traslados pendientes</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#delete-transfer">Eliminar traslados</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#approve-transfer">Aprobar traslados</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#show-approve-transfer">Ver traslado aprobados</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#show-approve-transfer">Ver información de los traslados</a></li>
                 </ul>
             </div>
         </nav>
@@ -75,7 +75,6 @@
                             </p>
                         </div>
                     </div>
-                    
                 </div>
             </section>
             <hr class="m-0" />
@@ -93,12 +92,13 @@
                             <img src="assets/img/signature_manager/01_register_transfer.png" class="img-fluid" alt="">
                             <p class="fs-4 my-4">
                                 Al presionar "click" se abrirá a la derecha una grilla del inventario de materiales. 
-                                Ahí podrá seleccionar varios materiales del inventario presionando la tecla <strong> Control + click </strong>  sobre el material.
+                                Ahí podrá seleccionar varios materiales del inventario presionando la tecla <strong> Control + click </strong>  sobre el material
+                                para ir seleccionádolo.
                             </p>
                             <img src="assets/img/signature_manager/02_register_transfer.png" class="img-fluid" alt="">
                             <p class="fs-4 my-4">
                                 Una vez seleccionados los materiales, deberá presionar <strong> Click derecho </strong> y se abrirá un menú.
-                                En este menú deberá presionar en "Cambiar de ubicación".
+                                En este menú deberá presionar en "Nuevo traslado".
 
                                 Tenga en cuenta que si alguno de los materiales seleccionados ya se encuentra registrado en un traslado, 
                                 no podrá registrar el nuevo traslado.
@@ -111,11 +111,26 @@
                             <img src="assets/img/signature_manager/04_register_transfer.png" class="img-fluid" alt="">
 
                             <p class="fs-4 my-4">
-                                Presione en <strong> Aceptar </strong> y ya podrá ver el traslado reflejado en la App de firmas.
+                                Presione en <strong> Aceptar </strong> y ya podrá ver el traslado en la grilla de traslados o podrá 
+                                asociar más material al traslado registrado. 
                             </p>
+
+                            <p class="fs-4 my-4">
+                               Si desea asociar más materiales al traslado, en la grilla de materiales del inventario,
+                               seleccione el material y presione <strong> Click derecho </strong> y esta vez seleccione la opción.
+                               "Agregar a traslado"
+                            </p>
+                            <img src="assets/img/signature_manager/05_register_transfer.png" class="img-fluid" alt="">
+
+                            <p class="fs-4 my-4">
+                                Se abrirá una grilla con los traslados registrados, seleccione el traslado al que quiere agregar el nuevo material
+                                y presione en aceptar:
+                             </p>
+
+                             <img src="assets/img/signature_manager/06_register_transfer.png" class="img-fluid" alt="">
+
                         </div>
                     </div>
-                    
                 </div>
             </section>
             <hr class="m-0" />
@@ -134,23 +149,18 @@
                             </p>
                             <img src="assets/img/signature_manager/01_show_transfers.png" class="img-fluid" alt="">
                             <p class="fs-4 my-4">
-                                Al presionar lo dirigirá a la pantalla donde verá un listado de los traslados registrados.
+                                Al presionar lo dirigirá a la pantalla donde verá un listado de los traslados registrados pendientes por abrobar
                             </p>
                             <img src="assets/img/signature_manager/02_show_transfer.png" class="img-fluid" alt="">
                             <p class="fs-4 my-4">
-                                En esa pantalla podrá: ver la información de cada traslado, aprobar el traslado o eliminar el traslado.
+                                Moviendo el "Swtich de Aprobados" verá un listado de los traslasdos pendientes por aprobar (llegada),
+                                es decir, los traslados que fueron registrados y firmados por otros usuarios.
+                                Se habilitará también otro botón en los traslados que le permitirá ver la información 
+                                del usuario que aprobó la salida de ese traslado.
+                            </p>
 
-                                Al presionar el botón para <strong> ver el traslado</strong>
-                                
-                                Abrirá otra pantalla donde verá los detalles del traslado.
-                            </p>
-                            <img src="assets/img/signature_manager/03_show_transfer.png" class="img-fluid" alt="">
-                            <p class="fs-4 my-4">
-                                Presione en <strong> Volver </strong> para volver a la pantalla del listado de traslados pendientes.
-                            </p>
-                        </div>
+                            <img src="assets/img/signature_manager/04_show_transfer.png" class="img-fluid" alt="">
                     </div>
-                    
                 </div>
             </section>
             <hr class="m-0" />
@@ -196,7 +206,6 @@
                                 <strong> Firma. </strong>
                                 <br> 
                             </p>
-
                             <p class="fs-4 my-4">
                                 Para cargar la firma primero deberá dibujarla y luego verificarla con el botón <strong> Verificar Firma</strong> <br>
                                 Tenga en cuenta que si no verifica la firma no podrá aprobar el traslado.
@@ -225,7 +234,7 @@
              <!-- show-approve-transfer-->
              <section class="resume-section" id="show-approve-transfer">
                 <div class="resume-section-content">
-                    <h2 class="mb-5 text-primary">Ver traslados aprobados</h2>
+                    <h2 class="mb-5 text-primary">Información de los traslados</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <p class="fs-4 mb-4">
@@ -233,11 +242,43 @@
                             </p>
                             <img src="assets/img/signature_manager/01_show_approve_transfers.png" class="img-fluid" alt="">
                             <p class="fs-4 my-4">
-                                Verá una grilla con el listado de traslados filtrados por la fecha, nombre y documento del responsable. <br>
-                                Al hacer <strong> Click derecho </strong> verá un menú donde podrá ver el documento con la
-                                información detalla del traslado:
+                                Verá una grilla con el listado de traslados filtrados por la fecha y el estado del traslado, <br>
+                                Al hacer <strong> Click derecho </strong> y presionar en modificar
+                                se abrirá un menú donde podrá ver diferente información del traslado como:
                             </p>
-                            <img src="assets/img/signature_manager/02_show_approve_transfer.png" class="img-fluid" alt="">
+                            <p class="fs-4 my-4">
+                                <strong>Información general</strong>
+                                Ahí podrá ver la información general del traslado como 
+                                la nueva ubicación donde se moverá el material
+                                y la información del transporte del traslado
+                            </p>
+                            <img src="assets/img/signature_manager/02_show_approved_transfer.png" class="img-fluid" alt="">
+                            <p class="fs-4 my-2">Ahí podrá cambiar la información del trasporte, 
+                                agregando el chofer y el vehílo que transportará el material y observaciones en caso de ser necesario,
+                                tenga en cuenta que solo podrá cambiar esta información del trasporte cuando el 
+                                traslado haya sido aprobado (firmado) para salir.
+                            </p>
+                            <img src="assets/img/signature_manager/03_show_approved_transfer.png" class="img-fluid" alt="">
+                            <p class="fs-4 mt-5 my-3">Otra información que verá en el menú es la de materiales,
+                                ahí podrá eliminar materiales del traslado, tenga en cuenta que solo podrá
+                                eliminar materiales del traslado solo cuando el traslado no haya sido aprobado
+                                es decir, cuando su estado sea el de registrado:
+                            </p>
+                            <img src="assets/img/signature_manager/04_show_approved_transfer.png" class="img-fluid" alt="">
+
+                           
+                            <p class="fs-4 mt-5 my-3">En la sección de estados, verá las fechas
+                                de cuándo se registró el traslado, cuando se registró en base (se aprbó la salida),
+                                cuando empezó a viajar y cuando finalizó (se aprobó la llegada)
+                            </p>
+                            <img src="assets/img/signature_manager/05_show_approved_transfer.png" class="img-fluid" alt="">
+
+                            <p class="fs-4 mt-5 my-3">
+                                Finalmente en la sección de documentos verá una grilla con la información
+                                de las aprobaciones de los traslados y los documentos:
+                            </p>
+                            <img src="assets/img/signature_manager/07_show_approved_transfer.png" class="img-fluid" alt="">
+
                         </div>
                     </div>
                 </div>
