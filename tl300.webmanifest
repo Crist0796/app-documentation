@@ -1,0 +1,22 @@
+{
+    "name": "TL300 App Documentation",
+    "short_name": "TL300",
+    "description": "Aplicación de documentación de usuario",
+    "icons": [
+      {
+        "src": "icons/icon-32.png",
+        "sizes": "32x32",
+        "type": "image/png"
+      },
+
+      {
+        "src": "icons/icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "/",
+    "display": "fullscreen",
+    "theme_color": "#223165",
+    "background_color": "#FFF"
+  }
