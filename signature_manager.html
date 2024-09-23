@@ -36,6 +36,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#delete-transfer">Eliminar traslados</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#approve-transfer">Aprobar traslados</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#show-approve-transfer">Ver información de los traslados</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#show-order-requests">Ordenes de pedido</a></li>
                 </ul>
             </div>
         </nav>
@@ -152,7 +153,7 @@
                             </p>
                             <img src="assets/img/signature_manager/02_show_transfer.png" class="img-fluid" alt="">
                             <p class="fs-4 my-4">
-                                Moviendo el "Swtich de Aprobados" verá un listado de los traslasdos pendientes por aprobar (llegada),
+                                Moviendo el "Swtich de Aprobados" verá un listado de los traslasdossignature_manager.html pendientes por aprobar (llegada),
                                 es decir, los traslados que fueron registrados y firmados por otros usuarios.
                                 Se habilitará también otro botón en los traslados que le permitirá ver la información 
                                 del usuario que aprobó la salida de ese traslado.
@@ -277,6 +278,103 @@
                                 de las aprobaciones de los traslados y los documentos:
                             </p>
                             <img src="assets/img/signature_manager/07_show_approved_transfer.png" class="img-fluid" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+
+
+            <!-- show-order-requests-->
+            <section class="resume-section" id="show-order-requests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5 text-primary">Ordenes de pedido</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <p class="fs-4 mb-4">
+                                En ONUS, en el panel de <strong>Gestión del taller</strong> - > <strong> Ordenes de pedido</strong> 
+                            </p>
+                            <img src="assets/img/signature_manager/order_request_01.jpg" class="img-fluid" alt="">
+                            <p class="fs-4 my-4">
+                                Verá una grilla con el listado de las ordenes de pedido, podrá filtrarlas por fecha y estado <br>
+
+                                Al hacer <strong> Click derecho </strong> se mostrará un menú donde podrá 
+                                agregar una orden de pedido o modificar una existente:
+                            </p>
+                            <img src="assets/img/signature_manager/order_request_02.jpg" class="img-fluid" alt="">
+                            <p class="fs-4 my-4">
+                                <strong>Información general</strong> <br>
+ 
+                                Una orden de pedido es una <span class="bold"> PRE-ORDEN DE COMPRA </span>
+                                es decir, es el paso previo a crear una orden de compra. <br>
+
+                                En donde podrá seleccionar los materiales y la cantidad que 
+                                le será solicitada al proveedor. <br>
+
+                                La información que debe llenar al crear una nueva orden de pedido:
+
+                            </p>
+                            <img src="assets/img/signature_manager/order_request_03.jpg" class="img-fluid" alt="">
+                            <img src="assets/img/signature_manager/order_request_04.jpg" class="img-fluid" alt="">
+
+
+                            <p class="fs-4 mt-5 my-3">Una vez creada la orden de pedido, la podrá modificar, ver los estados, agregar material y ver 
+                                los documentos generados (firmas) : <br>
+
+                            <img src="assets/img/signature_manager/order_request_07.jpg" class="img-fluid" alt="">
+
+
+                            <p class="fs-4 my-2">Una vez creada la orden de pedido, también la podrá ver en la aplicación:
+                            </p>
+                            <img src="assets/img/signature_manager/order_request_05.jpg" class="img-fluid" alt="">
+                            <p class="fs-4 mt-5 my-3">En cada tab se listarán ordenes de pedido con diferentes estados y podrá realizar diferentes acciones respecto a ello. <br>
+
+                                Veremos cada uno:
+
+                            </p>
+
+                            <img src="assets/img/signature_manager/order_request_06.jpg" class="img-fluid" alt="">
+
+                           
+                            <p class="fs-4 mt-5 my-3"> En la lista de ordenes de pedidos siempre verá la opción de firmar. <br>
+                                 Lo podrá hacer para diferentes etapas de la orden de pedido, <br>
+                                 verá un pequeño recordatorio en rojo en cada una: <br>
+                                 (El proceso es igual a la aprobación de traslados)
+
+                                <img src="assets/img/signature_manager/order_request_08.jpg" class="img-fluid" alt="">
+                                
+                            </p>
+                            <img src="assets/img/signature_manager/order_request_09.jpg" class="img-fluid" alt="">
+
+                            <p class="fs-4 mt-5 my-3">
+                                Cuando se firma una orden en "RECIBIR ORDEN", es decir, cuando su estado está en "RECIBIDA" esta ya no se listará en ningún TAB
+                                de la aplicación hasta que no modifique la información de transporte en ONUS : <br>
+                            </p>
+                            <img src="assets/img/signature_manager/order_request_10.jpg" class="img-fluid" alt="">
+
+                            <p class="fs-4 mt-5 my-3">
+                                Una vez haya modificado la información de transporte, podrá ver que la orden se lista en el TAB "DESPACHAR ORDEN" <br>
+
+                                Desde ahí podrá: <br>
+
+                                -Firmarla : Despachará la orden desde el lugar de llagada hasta el destino final.
+                                -Ver el material : No podrá hacer ninguna modificación.
+                            </p>
+
+                            <img src="assets/img/signature_manager/order_request_11.jpg" class="img-fluid" alt="">
+
+                            <p class="fs-4 mt-5 my-3">
+                                Finalmente está el último TAB que es para completar la orden:
+                            </p>
+
+                            <img src="assets/img/signature_manager/order_request_12.jpg" class="img-fluid" alt="">
+
+                            <p class="fs-4 mt-5 my-3">
+                                Y ya solamente complete el proceso de firma:
+                            </p>
+
+                            <img src="assets/img/signature_manager/order_request_13.jpg" class="img-fluid" alt="">
 
                         </div>
                     </div>
